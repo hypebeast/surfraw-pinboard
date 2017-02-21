@@ -2,12 +2,13 @@
 Surfraw-Pinboard
 ===============================
 
-Simple Python command line tool to download bookmarks from https://pinboard.in and save it in the `surfraw <https://surfraw.alioth.debian.org>` _ bookmark format.
+Simple Python command line tool to download bookmarks from https://pinboard.in and save it
+in the `surfraw <https://surfraw.alioth.debian.org>`_ bookmark format.
 
-The bookmark file can then be used together with `Rofi <https://davedavenport.github.io/rofi/>` _ and `surfraw <https://surfraw.alioth.debian.org>` _
-to implement a bookmark manager.
+The bookmark file can then be used together with `Rofi <https://davedavenport.github.io/rofi/>`_
+and `surfraw <https://surfraw.alioth.debian.org>`_ to implement a bookmark manager.
 
-See `rofi-surfraw-bookmark.sh <https://github.com/hypebeast/dotfiles/blob/master/bin/bin/rofi-surfraw-bookmark.sh>` _ as an example
+See `rofi-surfraw-bookmark.sh <https://github.com/hypebeast/dotfiles/blob/master/bin/bin/rofi-surfraw-bookmark.sh>`_ as an example
 how to use Rofi as a bookmark manager.
 
 .. image:: https://img.shields.io/pypi/v/surfraw_pinboard.svg
@@ -20,8 +21,8 @@ how to use Rofi as a bookmark manager.
 Features
 --------
 
-* Download all your bookmarks from `Pinboard <https://pinboard.in>` _.
-* Bookmarks are saved in surfraw bookmark formt.
+* Download all your bookmarks from `Pinboard <https://pinboard.in>`_ and
+* save it in the surfraw bookmark format.
 
 Usage
 -----
@@ -32,9 +33,24 @@ Install it with:
 
 Then start downloading your bookmarks with:
 
-``surfraw-pinboard -t 'token' bookmarks.txt``
+``surfraw-pinboard -t 'yourtokengoeshere' bookmarks.txt``
 
-Get your token at `Pinboard <https://pinboard.in/settings/password>` _.
+Get your token at `Pinboard <https://pinboard.in/settings/password>`_.
+
+Available Options
+-----------------
+
+Following options are availbale::
+
+  Usage: surfraw-pinboard [OPTIONS] OUTFILE
+
+    Script to export Pinboard bookmarks to a surfraw bookmark files
+
+  Options:
+    -t, --token TEXT    Pinboard API token.
+    --tags / --no-tags  Include tags in the output.
+    --version           Show the version and exit.
+    --help              Show this message and exit
 
 Credits
 ---------

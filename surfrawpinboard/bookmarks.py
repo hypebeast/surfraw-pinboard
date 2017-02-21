@@ -17,7 +17,6 @@ def getAllPosts(apiToken):
 
     try:
         posts = pb.posts.all()
-        #posts = pb.posts.recent(tag=["programming", "python"])
     except:
         click.echo("Error getting bookmarks from Pinboard")
         sys.exit(-1)
